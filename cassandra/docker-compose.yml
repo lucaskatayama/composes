@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  cassandra:
+    image: cassandra:latest
+    restart: always
+    ports:
+      - "17000:7000"
+      - "9042:9042"
+    networks:
+      local:
+networks:
+  local:
